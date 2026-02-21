@@ -23,16 +23,15 @@ const faqs = [
 
 const FAQItem = ({ question, answer, isOpen, onClick }: { question: string, answer: string, isOpen: boolean, onClick: () => void }) => {
     return (
-        <div className={`border-b transition-colors duration-300 ${isOpen ? 'border-amber-200' : 'border-gray-100'}`}>
+        <div className="border-b border-gray-100 transition-colors duration-300">
             <button
-                className="w-full py-6 flex justify-between items-center text-left group"
+                className="w-full py-6 flex justify-between items-center text-left"
                 onClick={onClick}
             >
-                {/* Active question highlights with yellow underline — strategic active state */}
-                <span className={`text-xl font-black transition-colors duration-300 ${isOpen ? 'text-amber-500' : 'text-db-dark group-hover:text-amber-500'}`}>
+                <span className="text-xl font-black text-db-dark">
                     {question}
                 </span>
-                <ChevronDown className={`w-6 h-6 transform transition-all duration-300 ${isOpen ? 'rotate-180 text-amber-500' : 'text-slate-400 group-hover:text-amber-500'}`} />
+                <ChevronDown className={`w-6 h-6 transform transition-all duration-300 text-slate-400 ${isOpen ? 'rotate-180' : ''}`} />
             </button>
             <AnimatePresence>
                 {isOpen && (
