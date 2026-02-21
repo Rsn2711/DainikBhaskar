@@ -8,10 +8,23 @@ export default {
         extend: {
             colors: {
                 db: {
-                    teal: '#0D9488', // Teal 600 - better contrast
-                    dark: '#0F172A', // Slate 950 - deep professional dark
-                    grey: '#F8FAFC', // Slate 50 - clean background
-                    text: '#334155', // Slate 700 - readable body text
+                    teal: '#0D9488',       // Teal 600 – primary brand
+                    dark: '#0F172A',       // Slate 950 – deep professional dark
+                    grey: '#F8FAFC',       // Slate 50 – clean background
+                    text: '#334155',       // Slate 700 – readable body text
+                    accent: '#EAB308',      // Warm premium yellow – energy accent
+                    'accent-dark': '#CA8A04', // Darker yellow for hover states
+                    'accent-light': '#FEF9C3', // Soft yellow bg tint
+                },
+                primary: {
+                    DEFAULT: '#0D9488',
+                    dark: '#0F766E',
+                    light: '#14B8A6',
+                },
+                accent: {
+                    DEFAULT: '#EAB308',
+                    dark: '#CA8A04',
+                    light: '#FEF9C3',
                 },
             },
             fontFamily: {

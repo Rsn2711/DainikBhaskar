@@ -3,7 +3,8 @@ import { Facebook, Twitter, Instagram, Linkedin, MapPin, Phone, Mail } from 'luc
 const Footer: React.FC = () => {
     return (
         <footer className="bg-db-dark text-white pt-16 pb-10 overflow-hidden relative">
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-db-teal via-teal-400 to-db-teal" />
+            {/* Top accent bar: teal-to-yellow gradient — premium brand flourish */}
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-db-teal via-amber-400 to-db-teal" />
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
@@ -22,42 +23,43 @@ const Footer: React.FC = () => {
                         </p>
                         <div className="flex space-x-5">
                             {[Facebook, Twitter, Instagram, Linkedin].map((Icon, idx) => (
-                                <a key={idx} href="#" className="w-10 h-10 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center hover:bg-db-teal hover:border-db-teal transition-all duration-300">
-                                    <Icon className="w-5 h-5 text-white" />
+                                // Social icons: hover yellow bg — energy & action accent
+                                <a key={idx} href="#" className="w-10 h-10 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center hover:bg-amber-400 hover:border-amber-400 hover:text-gray-900 transition-all duration-300 group">
+                                    <Icon className="w-5 h-5 text-white group-hover:text-gray-900 transition-colors duration-300" />
                                 </a>
                             ))}
                         </div>
                     </div>
 
-                    {/* Editions */}
+                    {/* Editions — yellow section border accent */}
                     <div>
-                        <h4 className="text-xl text-white mb-8 border-l-4 border-db-teal pl-4 uppercase tracking-wider">
-  Top Editions
-</h4>
+                        <h4 className="text-xl text-white mb-8 border-l-4 border-amber-400 pl-4 uppercase tracking-wider">
+                            Top Editions
+                        </h4>
                         <ul className="space-y-4 text-slate-400 text-lg font-medium">
                             {["Delhi NCR", "Mumbai", "Jaipur", "Bhopal", "Indore", "Ahmedabad"].map((item, idx) => (
-                                <li key={idx}><a href="#" className="hover:text-db-teal transition-colors font-semibold">{item}</a></li>
+                                <li key={idx}><a href="#" className="hover:text-amber-400 transition-colors duration-300 font-semibold">{item}</a></li>
                             ))}
                         </ul>
                     </div>
 
-                    {/* Platforms */}
+                    {/* Platforms — yellow section border accent */}
                     <div>
-                        <h4 className="text-xl text-white mb-8 border-l-4 border-db-teal pl-4 uppercase tracking-wider">
-  Platforms
-</h4>
+                        <h4 className="text-xl text-white mb-8 border-l-4 border-amber-400 pl-4 uppercase tracking-wider">
+                            Platforms
+                        </h4>
                         <ul className="space-y-4 text-slate-400 text-lg font-medium">
                             {["Print Newspaper", "Dainik Bhaskar Web", "Bhaskar App", "Money Bhaskar", "Divya Bhaskar", "Divya Marathi"].map((item, idx) => (
-                                <li key={idx}><a href="#" className="hover:text-db-teal transition-colors font-semibold">{item}</a></li>
+                                <li key={idx}><a href="#" className="hover:text-amber-400 transition-colors duration-300 font-semibold">{item}</a></li>
                             ))}
                         </ul>
                     </div>
 
-                    {/* Contact Us */}
+                    {/* Contact Us — yellow section border accent */}
                     <div>
-                        <h4 className="text-xl text-white mb-8 border-l-4 border-db-teal pl-4 uppercase tracking-wider">
-  Contact Us
-</h4>
+                        <h4 className="text-xl text-white mb-8 border-l-4 border-amber-400 pl-4 uppercase tracking-wider">
+                            Contact Us
+                        </h4>
                         <ul className="space-y-6 text-slate-400 text-lg font-medium">
                             <li className="flex items-start">
                                 <MapPin className="w-6 h-6 text-db-teal mr-4 flex-shrink-0" />

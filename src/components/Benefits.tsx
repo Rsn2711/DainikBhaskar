@@ -32,7 +32,8 @@ const Benefits: React.FC = () => {
                     <h2 className="text-4xl lg:text-5xl font-black text-db-dark mb-6">
                         Why Advertise with <span className="text-db-teal">Dainik Bhaskar?</span>
                     </h2>
-                    <div className="w-24 h-1.5 bg-db-teal mx-auto rounded-full" />
+                    {/* Yellow accent underline — energy micro-highlight */}
+                    <div className="w-24 h-1.5 bg-amber-400 mx-auto rounded-full" />
                 </div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -43,9 +44,10 @@ const Benefits: React.FC = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            className="premium-card p-10 group bg-teal-50/60 border-teal-100 hover:bg-teal-50 hover:border-teal-200"
+                            className="premium-card p-10 group border-slate-100"
                         >
-                            <div className="w-16 h-16 bg-teal-50 text-db-teal rounded-2xl flex items-center justify-center mb-8 group-hover:bg-db-teal group-hover:text-white transition-all duration-500 shadow-sm">
+                            {/* Icon: teal default, yellow on hover */}
+                            <div className="w-16 h-16 bg-teal-50 text-db-teal rounded-2xl flex items-center justify-center mb-8 group-hover:bg-amber-400 group-hover:text-gray-900 transition-all duration-300 shadow-sm">
                                 {benefit.icon}
                             </div>
                             <h3 className="text-2xl font-black text-db-dark mb-4 group-hover:text-db-teal transition-colors">{benefit.title}</h3>

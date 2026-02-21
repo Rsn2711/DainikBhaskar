@@ -35,7 +35,7 @@ const HowItWorks: React.FC = () => {
                         <div className="bg-white rounded-[2.5rem] p-12 lg:p-16 aspect-square flex items-center justify-center relative shadow-[0_40px_100px_-20px_rgba(15,23,42,0.1)] border border-slate-100">
                             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,#0D948805_0%,transparent_70%)]" />
 
-                            {/* Floating Decorative Elements */}
+                            {/* Floating Bell — teal */}
                             <motion.div
                                 animate={{ y: [0, -10, 0] }}
                                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
@@ -53,22 +53,25 @@ const HowItWorks: React.FC = () => {
                             </motion.div>
 
                             <div className="grid grid-cols-2 gap-8 relative z-10 w-full max-w-md">
-                                {/* Card 1: Ad Content Mockup */}
+
+                                {/* Card 1: Ad Content Mockup — deep indigo/navy gradient */}
                                 <motion.div
                                     whileHover={{ y: -5 }}
-                                    className="bg-white rounded-3xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.08)] p-5 border border-slate-50 relative overflow-hidden group flex flex-col justify-between h-full"
+                                    className="rounded-3xl shadow-[0_20px_50px_-12px_rgba(79,70,229,0.35)] p-5 relative overflow-hidden group flex flex-col justify-between h-full"
+                                    style={{ background: 'linear-gradient(135deg, #4338ca 0%, #6366f1 60%, #818cf8 100%)' }}
                                 >
+                                    <div className="absolute top-0 right-0 w-24 h-24 bg-white/10 rounded-full -mr-12 -mt-12 blur-2xl" />
                                     <div className="flex items-center space-x-2 mb-4">
-                                        <div className="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center p-1.5 overflow-hidden">
-                                            <img src="/image/vector-education-logo_779267-2083.avif" alt="Logo" className="w-full h-full object-contain" />
+                                        <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center p-1.5 overflow-hidden backdrop-blur-sm">
+                                            <img src="/image/vector-education-logo_779267-2083.avif" alt="Logo" className="w-full h-full object-contain brightness-0 invert" />
                                         </div>
-                                        <div className="h-2 w-16 bg-slate-100 rounded-full" />
+                                        <div className="h-2 w-16 bg-white/30 rounded-full" />
                                     </div>
 
                                     <div className="flex items-end justify-between gap-4 mt-auto">
                                         <div className="space-y-3 flex-1 pb-2">
-                                            <div className="h-2 w-full bg-slate-100 rounded-full" />
-                                            <div className="h-2 w-2/3 bg-slate-100 rounded-full" />
+                                            <div className="h-2 w-full bg-white/20 rounded-full" />
+                                            <div className="h-2 w-2/3 bg-white/20 rounded-full" />
                                         </div>
                                         <div className="w-24 h-24 relative flex-shrink-0 -mb-5 -mr-5">
                                             <img
@@ -80,10 +83,10 @@ const HowItWorks: React.FC = () => {
                                     </div>
                                 </motion.div>
 
-                                {/* Card 2: Strategy / Graph */}
+                                {/* Card 2: Strategy / Graph — teal-to-yellow dual gradient */}
                                 <motion.div
                                     whileHover={{ y: -5 }}
-                                    className="bg-db-teal rounded-3xl shadow-[0_20px_50px_-12px_rgba(13,148,136,0.3)] p-5 relative overflow-hidden translate-y-8"
+                                    className="dual-gradient rounded-3xl shadow-[0_20px_50px_-12px_rgba(13,148,136,0.3)] p-5 relative overflow-hidden translate-y-8"
                                 >
                                     <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16 blur-2xl" />
                                     <div className="flex justify-between items-start mb-6">
@@ -102,38 +105,42 @@ const HowItWorks: React.FC = () => {
                                     </div>
                                 </motion.div>
 
-                                {/* Card 3: Reach / Users */}
+                                {/* Card 3: Reach / Users — amber-to-orange gradient */}
                                 <motion.div
                                     whileHover={{ y: -5 }}
-                                    className="bg-white rounded-3xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.08)] p-6 border border-slate-50 -translate-y-4"
+                                    className="rounded-3xl shadow-[0_20px_50px_-12px_rgba(234,88,12,0.3)] p-6 -translate-y-4 relative overflow-hidden"
+                                    style={{ background: 'linear-gradient(135deg, #f59e0b 0%, #f97316 60%, #ea580c 100%)' }}
                                 >
+                                    <div className="absolute top-0 right-0 w-24 h-24 bg-white/10 rounded-full -mr-12 -mt-12 blur-2xl" />
                                     <div className="flex items-center space-x-4 mb-4">
                                         <div className="flex -space-x-3">
                                             {[1, 2, 3].map(i => (
-                                                <div key={i} className={`w-8 h-8 rounded-full border-2 border-white bg-slate-${i + 1}00`} />
+                                                <div key={i} className="w-8 h-8 rounded-full border-2 border-white/40 bg-white/20 backdrop-blur-sm" />
                                             ))}
                                         </div>
-                                        <span className="text-xs font-black text-db-dark">10M+ Reach</span>
+                                        <span className="text-xs font-black text-white drop-shadow">10M+ Reach</span>
                                     </div>
                                     <div className="grid grid-cols-2 gap-2">
-                                        <div className="h-2 w-full bg-slate-100 rounded" />
-                                        <div className="h-2 w-full bg-slate-100 rounded" />
-                                        <div className="h-2 w-3/4 bg-slate-100 rounded" />
+                                        <div className="h-2 w-full bg-white/30 rounded" />
+                                        <div className="h-2 w-full bg-white/30 rounded" />
+                                        <div className="h-2 w-3/4 bg-white/30 rounded" />
                                     </div>
                                 </motion.div>
 
-                                {/* Card 4: Success Message */}
+                                {/* Card 4: Success Message — emerald green gradient */}
                                 <motion.div
                                     whileHover={{ y: -5 }}
-                                    className="bg-white rounded-3xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.08)] p-5 border border-slate-50 translate-y-4"
+                                    className="rounded-3xl shadow-[0_20px_50px_-12px_rgba(5,150,105,0.35)] p-5 translate-y-4 relative overflow-hidden"
+                                    style={{ background: 'linear-gradient(135deg, #059669 0%, #10b981 55%, #34d399 100%)' }}
                                 >
+                                    <div className="absolute top-0 right-0 w-24 h-24 bg-white/10 rounded-full -mr-12 -mt-12 blur-2xl" />
                                     <div className="flex flex-col items-center text-center space-y-3">
-                                        <div className="w-12 h-12 bg-green-50 rounded-full flex items-center justify-center">
-                                            <CheckCircle className="w-6 h-6 text-green-500" />
+                                        <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                                            <CheckCircle className="w-6 h-6 text-white" />
                                         </div>
                                         <div>
-                                            <div className="text-sm font-black text-db-dark">Campaign Active</div>
-                                            <div className="text-[10px] font-bold text-slate-400">Targeting Pan India</div>
+                                            <div className="text-sm font-black text-white">Campaign Active</div>
+                                            <div className="text-[10px] font-bold text-white/70">Targeting Pan India</div>
                                         </div>
                                     </div>
                                 </motion.div>
@@ -157,9 +164,9 @@ const HowItWorks: React.FC = () => {
                                     whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ delay: index * 0.2 }}
-                                    className="relative pl-20"
+                                    className="relative pl-20 group"
                                 >
-                                    <div className="absolute left-0 top-0 w-14 h-14 bg-white border-4 border-slate-50 rounded-full flex items-center justify-center shadow-lg z-10 text-db-teal">
+                                    <div className="absolute left-0 top-0 w-14 h-14 bg-white border-4 border-slate-50 rounded-full flex items-center justify-center shadow-lg z-10 text-db-teal group-hover:border-amber-300 group-hover:text-amber-500 transition-all duration-300">
                                         {step.icon}
                                     </div>
                                     <div className="absolute left-0 -top-4 text-7xl font-black text-slate-100/80 -z-0 select-none">

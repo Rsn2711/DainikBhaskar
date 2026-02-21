@@ -17,8 +17,19 @@
   }
 }
 
+/* Primary CTA – deep teal */
 .premium-gradient {
   background: linear-gradient(135deg, #0D9488 0%, #0F766E 100%);
+}
+
+/* Secondary CTA / Feature strip – teal to warm yellow blend */
+.dual-gradient {
+  background: linear-gradient(135deg, #0F766E 0%, #0D9488 55%, #EAB308 100%);
+}
+
+/* Accent-only gradient – for subtle yellow backgrounds */
+.accent-gradient {
+  background: linear-gradient(135deg, #EAB308 0%, #CA8A04 100%);
 }
 
 .premium-shadow {
@@ -30,6 +41,6 @@
 }
 
 .premium-card:hover {
-  @apply -translate-y-2;
-  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+  @apply -translate-y-2 border-amber-300;
+  box-shadow: 0 20px 40px rgba(234, 179, 8, 0.15), 0 8px 16px rgba(15, 23, 42, 0.06);
 }

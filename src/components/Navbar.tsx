@@ -15,10 +15,11 @@ const Navbar: React.FC = () => {
 
                     <div className="hidden md:flex items-center space-x-8">
                         <div className="flex items-center text-db-dark font-semibold">
-                            <Phone className="w-5 h-5 text-db-teal mr-2" />
+                            <Phone className="w-5 h-5 text-db-teal mr-2 transition-colors duration-300" />
                             <span>Contact: 1800-XXX-XXXX</span>
                         </div>
-                        <button className="premium-gradient !text-white px-8 py-3 rounded-xl font-bold hover:opacity-90 transition-all shadow-lg shadow-teal-100 hover:-translate-y-1 hover:scale-105 active:scale-95">
+                        {/* Yellow accent CTA — strategic energy accent on navbar */}
+                        <button className="bg-amber-400 hover:bg-amber-500 text-gray-900 px-8 py-3 rounded-xl font-bold transition-all shadow-md hover:-translate-y-1 hover:scale-105 active:scale-95">
                             Advertise With Us
                         </button>
                     </div>
