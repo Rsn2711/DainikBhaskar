@@ -37,11 +37,11 @@ const StatItem = ({ label, value, suffix, delay }: { label: string, value: numbe
         >
             <div className="flex items-baseline gap-1">
                 {/* Number: dark default, yellow on hover — energy accent on interaction */}
-                <span className="text-4xl lg:text-5xl font-black text-slate-900 group-hover:text-amber-500 transition-colors duration-300">
+                <span className="text-4xl lg:text-5xl font-black text-slate-900">
                     {count}
                 </span>
                 {/* Suffix always yellow — premium energy highlight for key stats */}
-                <span className="text-2xl lg:text-3xl font-black text-amber-500">
+                <span className="text-2xl lg:text-3xl font-black text-slate-900">
                     {suffix}
                 </span>
             </div>
